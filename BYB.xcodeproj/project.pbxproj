@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B615BD192BAD210C00168E59 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = B615BD182BAD210C00168E59 /* SplineRuntime */; };
 		B628578F2BAC437700EFFFA3 /* BYBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628578E2BAC437700EFFFA3 /* BYBApp.swift */; };
 		B62857912BAC437700EFFFA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62857902BAC437700EFFFA3 /* ContentView.swift */; };
 		B62857932BAC437C00EFFFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62857922BAC437C00EFFFA3 /* Assets.xcassets */; };
 		B62857962BAC437C00EFFFA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62857952BAC437C00EFFFA3 /* Preview Assets.xcassets */; };
+		B649F5F32BAD33F600BBD91C /* Onboard3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649F5F22BAD33F600BBD91C /* Onboard3DView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		B62857902BAC437700EFFFA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B62857922BAC437C00EFFFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B62857952BAC437C00EFFFA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B649F5F22BAD33F600BBD91C /* Onboard3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard3DView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B615BD192BAD210C00168E59 /* SplineRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				B628578E2BAC437700EFFFA3 /* BYBApp.swift */,
 				B62857902BAC437700EFFFA3 /* ContentView.swift */,
+				B649F5F22BAD33F600BBD91C /* Onboard3DView.swift */,
 				B62857922BAC437C00EFFFA3 /* Assets.xcassets */,
 				B62857942BAC437C00EFFFA3 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = BYB;
+			packageProductDependencies = (
+				B615BD182BAD210C00168E59 /* SplineRuntime */,
+			);
 			productName = BYB;
 			productReference = B628578B2BAC437700EFFFA3 /* BYB.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B62857822BAC437700EFFFA3;
+			packageReferences = (
+				B615BD172BAD210C00168E59 /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			productRefGroup = B628578C2BAC437700EFFFA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B649F5F32BAD33F600BBD91C /* Onboard3DView.swift in Sources */,
 				B62857912BAC437700EFFFA3 /* ContentView.swift in Sources */,
 				B628578F2BAC437700EFFFA3 /* BYBApp.swift in Sources */,
 			);
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B615BD172BAD210C00168E59 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B615BD182BAD210C00168E59 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B615BD172BAD210C00168E59 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B62857832BAC437700EFFFA3 /* Project object */;
 }
